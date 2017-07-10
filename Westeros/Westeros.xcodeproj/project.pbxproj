@@ -16,6 +16,8 @@
 		02BEDEAD1F0ECE3D00179504 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = 02BEDEAC1F0ECE3D00179504 /* codeIsComing.png */; };
 		02BEDEAF1F0ECE6100179504 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEDEAE1F0ECE6100179504 /* Person.swift */; };
 		02BEDEB11F0ED54200179504 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEDEB01F0ED54200179504 /* PersonTests.swift */; };
+		02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B731F14128F008CD3A7 /* HouseViewController.swift */; };
+		02FA5B761F14128F008CD3A7 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FA5B741F14128F008CD3A7 /* HouseViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		02BEDEAC1F0ECE3D00179504 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
 		02BEDEAE1F0ECE6100179504 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		02BEDEB01F0ED54200179504 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		02FA5B731F14128F008CD3A7 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		02FA5B741F14128F008CD3A7 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				02BEDEA91F0ECA3C00179504 /* Resources */,
+				02FA5B721F141142008CD3A7 /* Controllers */,
 				02BEDEA81F0EC43A00179504 /* Models */,
 				02BEDE841F0C47E000179504 /* AppDelegate.swift */,
 				02BEDE8B1F0C47E000179504 /* Assets.xcassets */,
@@ -119,6 +124,15 @@
 				02BEDEAA1F0ECA4900179504 /* lannister.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		02FA5B721F141142008CD3A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02FA5B731F14128F008CD3A7 /* HouseViewController.swift */,
+				02FA5B741F14128F008CD3A7 /* HouseViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +223,7 @@
 			files = (
 				02BEDEAB1F0ECA4900179504 /* lannister.jpg in Resources */,
 				02BEDE8F1F0C47E000179504 /* LaunchScreen.storyboard in Resources */,
+				02FA5B761F14128F008CD3A7 /* HouseViewController.xib in Resources */,
 				02BEDE8C1F0C47E000179504 /* Assets.xcassets in Resources */,
 				02BEDEAD1F0ECE3D00179504 /* codeIsComing.png in Resources */,
 			);
@@ -231,6 +246,7 @@
 				02BEDEAF1F0ECE6100179504 /* Person.swift in Sources */,
 				02BEDEA71F0EC29B00179504 /* House.swift in Sources */,
 				02BEDE851F0C47E000179504 /* AppDelegate.swift in Sources */,
+				02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
