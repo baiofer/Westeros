@@ -18,6 +18,7 @@
 		02BEDEB11F0ED54200179504 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEDEB01F0ED54200179504 /* PersonTests.swift */; };
 		02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B731F14128F008CD3A7 /* HouseViewController.swift */; };
 		02FA5B761F14128F008CD3A7 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FA5B741F14128F008CD3A7 /* HouseViewController.xib */; };
+		02FA5B791F155DA5008CD3A7 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B781F155DA5008CD3A7 /* UIKitExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		02BEDEB01F0ED54200179504 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		02FA5B731F14128F008CD3A7 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		02FA5B741F14128F008CD3A7 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
+		02FA5B781F155DA5008CD3A7 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		02BEDE831F0C47E000179504 /* Westeros */ = {
 			isa = PBXGroup;
 			children = (
+				02FA5B771F155D7B008CD3A7 /* CocoaExtensions */,
 				02BEDEA91F0ECA3C00179504 /* Resources */,
 				02FA5B721F141142008CD3A7 /* Controllers */,
 				02BEDEA81F0EC43A00179504 /* Models */,
@@ -133,6 +136,14 @@
 				02FA5B741F14128F008CD3A7 /* HouseViewController.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		02FA5B771F155D7B008CD3A7 /* CocoaExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				02FA5B781F155DA5008CD3A7 /* UIKitExtensions.swift */,
+			);
+			name = CocoaExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				02BEDEA71F0EC29B00179504 /* House.swift in Sources */,
 				02BEDE851F0C47E000179504 /* AppDelegate.swift in Sources */,
 				02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */,
+				02FA5B791F155DA5008CD3A7 /* UIKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
