@@ -19,6 +19,7 @@ class HouseViewController: UIViewController {
     init(model: House) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
+        self.title = model.name
     }
     
     //Chapuza de los de Cupertino (relacionada con los nil)
@@ -31,6 +32,7 @@ class HouseViewController: UIViewController {
         houseNameView.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         wordsTextView.text = model.words
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

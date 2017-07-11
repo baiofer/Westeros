@@ -30,17 +30,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let lannisterSigil = Sigil(image: #imageLiteral(resourceName: "lannister.jpg"), description: "Rampant Lion")
         let lannisterHouse = House(name: "Lannister", sigil: lannisterSigil, words: "Hear me roar")
         
+        
+        //Creamos el tab
         //Creamos el controlador
         let starkVC = HouseViewController(model: starkHouse)
-        starkVC.title = "Stark"
         
         //Creamos otro controlador
         let lannisterVC = HouseViewController(model: lannisterHouse)
-        lannisterVC.title = "Lannister"
+        
+        //creamos los Navigations
+        let starkNav = UINavigationController(rootViewController: starkVC)
+        let lannisterNav = UINavigationController(rootViewController: lannisterVC)
+        
         
         //Creamos el combinador
         let tabVC = UITabBarController()
-        tabVC.viewControllers = [lannisterVC, starkVC]
+        tabVC.viewControllers = [lannisterNav, starkNav]
+        
         
         //Asignamos el rootVC
         window?.rootViewController = tabVC
