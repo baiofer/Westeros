@@ -19,6 +19,8 @@
 		02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B731F14128F008CD3A7 /* HouseViewController.swift */; };
 		02FA5B761F14128F008CD3A7 /* HouseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FA5B741F14128F008CD3A7 /* HouseViewController.xib */; };
 		02FA5B791F155DA5008CD3A7 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B781F155DA5008CD3A7 /* UIKitExtensions.swift */; };
+		02FA5B7B1F15607D008CD3A7 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B7A1F15607D008CD3A7 /* RepositoryTest.swift */; };
+		02FA5B7D1F156223008CD3A7 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA5B7C1F156223008CD3A7 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		02FA5B731F14128F008CD3A7 /* HouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
 		02FA5B741F14128F008CD3A7 /* HouseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HouseViewController.xib; sourceTree = "<group>"; };
 		02FA5B781F155DA5008CD3A7 /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		02FA5B7A1F15607D008CD3A7 /* RepositoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		02FA5B7C1F156223008CD3A7 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				02BEDE9B1F0C47E000179504 /* Info.plist */,
 				02BEDEA41F0EC0F800179504 /* HouseTests.swift */,
 				02BEDEB01F0ED54200179504 /* PersonTests.swift */,
+				02FA5B7A1F15607D008CD3A7 /* RepositoryTest.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			children = (
 				02BEDEA61F0EC29B00179504 /* House.swift */,
 				02BEDEAE1F0ECE6100179504 /* Person.swift */,
+				02FA5B7C1F156223008CD3A7 /* Repository.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 				02BEDE851F0C47E000179504 /* AppDelegate.swift in Sources */,
 				02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */,
 				02FA5B791F155DA5008CD3A7 /* UIKitExtensions.swift in Sources */,
+				02FA5B7D1F156223008CD3A7 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +275,7 @@
 			files = (
 				02BEDEA51F0EC0F800179504 /* HouseTests.swift in Sources */,
 				02BEDEB11F0ED54200179504 /* PersonTests.swift in Sources */,
+				02FA5B7B1F15607D008CD3A7 /* RepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
