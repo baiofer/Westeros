@@ -32,7 +32,6 @@ class HouseViewController: UIViewController {
         houseNameView.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         wordsTextView.text = model.words
-
     }
     
     override func viewWillAppear(_ animated: Bool) {

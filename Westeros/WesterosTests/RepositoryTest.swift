@@ -29,6 +29,7 @@ class RepositoryTest: XCTestCase {
         let houses = Repository.local.houses
         XCTAssertNotNil(houses)
         XCTAssertEqual(houses.count, 2)
+        XCTAssertLessThan(houses[0], houses[1])
     }
     
 }
