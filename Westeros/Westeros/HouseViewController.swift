@@ -34,8 +34,29 @@ class HouseViewController: UIViewController {
         wordsTextView.text = model.words
     }
     
+    @objc func displayWiki() {
+        //Creamos un WikiVC
+        let wikiVC = WikiViewController(model: model)
+        
+        //Lo cargamos en el navigator
+        navigationController?.pushViewController(wikiVC, animated: true)
+    }
+    
+    //Forma de añadir botones en un navigation Controller
+    func setupUI() {
+        //Creamos un botón
+        let wiki = UIBarButtonItem(title: "Wiki",
+                                   style: .plain,
+                                   target: self,
+                                   action: #selector(displayWiki))
+        //Lo añadimos a la barra del navigationController
+        navigationItem.rightBarButtonItem = wiki
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        setupUI()
         
         syncViewWithModel()
     }

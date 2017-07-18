@@ -13,14 +13,25 @@ typealias Words = String
 typealias Members = Set<Person>
 
 final class House {
-    let name: String
-    let sigil: Sigil
-    let words: Words
-    private var _members: Members
+    let name    : String
+    let sigil   : Sigil
+    let words   : Words
+    let wikiURL : URL
+    var _members: Members
     
-    init(name: String, sigil: Sigil, words: Words) {
+    var members: Members {
+        return _members
+    }
+    
+    init(name: String, sigil: Sigil, words: Words, url: URL) {
         (self.name, self.sigil, self.words) = (name, sigil, words)
         _members = Members()
+        self.wikiURL = url
+    }
+    
+    func sortedMembers() -> [Person] {
+        let membersArray: [Person] = Array(_members)
+        return membersArray.sorted()
     }
 }
 
@@ -43,6 +54,13 @@ extension House {
             return
         }
         _members.insert(person)
+    }
+    
+    //Función que puede recibir uno o mas parámetros
+    func add(persons: Person...) {
+        for person in persons {
+            add(person: person)
+        }
     }
 }
 
