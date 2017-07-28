@@ -41,7 +41,7 @@ class HouseTests: XCTestCase {
         
         //Igualdad
         let jinxed = Repository.local.house(named: "Stark")
-        XCTAssertEqual(jinxed, houses[3])
+        XCTAssertEqual(jinxed, houses[6])
         
         //Desigualdad
         XCTAssertNotEqual(houses[1], houses[0])

@@ -31,15 +31,15 @@ class PersonTest: XCTestCase {
     }
     
     func testFullName() {
-        XCTAssertEqual(houses[0].members.first?.fullName, "Euron III Greyjoy")
+        XCTAssertEqual(houses[1].members.first?.fullName, "Joffrey Baratheon")
     }
     
     func testPersonEquality() {
         //Ientidad
-        XCTAssertEqual(houses[0].members.first, houses[0].members.first)
+        XCTAssertEqual(houses[1].members.first, houses[1].members.first)
         //Igualdad
-        let euron = Repository.local.house(named:"Greyjoy")?.members.first
-        XCTAssertEqual(euron, houses[0].members.first)
+        let persona = Repository.local.house(named:"Greyjoy")?.members.first
+        XCTAssertEqual(persona, houses[2].members.first)
         //Desigualdad
         XCTAssertNotEqual(houses[0].members.first, houses[1].members.first)
     }

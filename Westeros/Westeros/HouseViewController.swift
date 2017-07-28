@@ -10,7 +10,7 @@ import UIKit
 
 class HouseViewController: UIViewController {
 
-    @IBOutlet weak var houseNameView: UILabel!
+    //@IBOutlet weak var houseNameView: UILabel!
     @IBOutlet weak var wordsTextView: UILabel!
     @IBOutlet weak var sigilImageView: UIImageView!
     
@@ -29,7 +29,7 @@ class HouseViewController: UIViewController {
     
     func syncViewWithModel() {
         // Model -> View
-        houseNameView.text = "House \(model.name)"
+        //houseNameView.text = "House \(model.name)"
         sigilImageView.image = model.sigil.image
         wordsTextView.text = model.words
     }
@@ -42,15 +42,33 @@ class HouseViewController: UIViewController {
         navigationController?.pushViewController(wikiVC, animated: true)
     }
     
+    @objc func displayPerson() {
+        //Creamos un PersonVC
+        //Creamos un modelo
+        let persons = model.sortedMembers()
+        //Creamos los controladores
+        let dataSource = DataSources.personDataSource(model: persons)
+        let personVC = ArrayTableViewController(dataSource: dataSource,
+                                                title: "Persons",
+                                                style: .plain)
+
+        navigationController?.pushViewController(personVC, animated: true)
+    }
+    
     //Forma de añadir botones en un navigation Controller
     func setupUI() {
-        //Creamos un botón
+        //Creamos los botones (wiki y person)
         let wiki = UIBarButtonItem(title: "Wiki",
                                    style: .plain,
                                    target: self,
                                    action: #selector(displayWiki))
-        //Lo añadimos a la barra del navigationController
-        navigationItem.rightBarButtonItem = wiki
+        let person = UIBarButtonItem(title: "Person",
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(displayPerson))
+        
+        //Los añadimos a la barra del navigationController
+        navigationItem.rightBarButtonItems = [wiki, person]
     }
     
     override func viewWillAppear(_ animated: Bool) {
