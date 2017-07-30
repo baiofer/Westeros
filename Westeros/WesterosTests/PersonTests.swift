@@ -31,7 +31,7 @@ class PersonTest: XCTestCase {
     }
     
     func testFullName() {
-        XCTAssertEqual(houses[1].members.first?.fullName, "Joffrey Baratheon")
+        XCTAssertEqual(houses[1].members.first?.fullName, "Renly Baratheon")
     }
     
     func testPersonEquality() {

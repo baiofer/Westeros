@@ -15,3 +15,15 @@ extension UIViewController {
         return nav
     }
 }
+
+extension String {
+    
+    //Convertir un string en Date
+    func dateConvert() -> Date {
+        let dateString = self
+        let dateStringFormatter = DateFormatter()
+        dateStringFormatter.dateFormat = "dd/MM/yyyy"
+        let dateFromString = dateStringFormatter.date(from: dateString)
+        return dateFromString!
+    }
+}

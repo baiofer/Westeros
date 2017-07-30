@@ -13,10 +13,11 @@ import UIKit
     
 class BaseViewControllerDelegate<Element>: NSObject {
     var source: ArrayDataSource<Element>?
-    var viewController: UIViewController?
+    weak var viewController: UIViewController?
 }
     
 //Ahora genero el delegado para cada tabla en una clase
+
 //Delegado de House
 final class HousesDelegate: BaseViewControllerDelegate<House>, UITableViewDelegate {
         
