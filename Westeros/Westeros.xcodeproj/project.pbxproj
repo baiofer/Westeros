@@ -92,6 +92,8 @@
 		028C92FE1F2DF6180092264C /* e703.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028C92FA1F2DF6180092264C /* e703.jpg */; };
 		028C92FF1F2DF6180092264C /* e702.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028C92FB1F2DF6180092264C /* e702.jpg */; };
 		028C93001F2DF6180092264C /* e701.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 028C92FC1F2DF6180092264C /* e701.jpg */; };
+		028C93051F2DF9980092264C /* EpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028C93031F2DF9980092264C /* EpisodeViewController.swift */; };
+		028C93061F2DF9980092264C /* EpisodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028C93041F2DF9980092264C /* EpisodeViewController.xib */; };
 		02BEDE851F0C47E000179504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BEDE841F0C47E000179504 /* AppDelegate.swift */; };
 		02BEDE8C1F0C47E000179504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BEDE8B1F0C47E000179504 /* Assets.xcassets */; };
 		02BEDE8F1F0C47E000179504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BEDE8D1F0C47E000179504 /* LaunchScreen.storyboard */; };
@@ -203,6 +205,8 @@
 		028C92FA1F2DF6180092264C /* e703.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e703.jpg; sourceTree = "<group>"; };
 		028C92FB1F2DF6180092264C /* e702.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e702.jpg; sourceTree = "<group>"; };
 		028C92FC1F2DF6180092264C /* e701.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e701.jpg; sourceTree = "<group>"; };
+		028C93031F2DF9980092264C /* EpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeViewController.swift; sourceTree = "<group>"; };
+		028C93041F2DF9980092264C /* EpisodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeViewController.xib; sourceTree = "<group>"; };
 		02BEDE811F0C47E000179504 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BEDE841F0C47E000179504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BEDE8B1F0C47E000179504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -464,6 +468,8 @@
 				02FA5B741F14128F008CD3A7 /* HouseViewController.xib */,
 				026A297A1F1D4A2000933AC0 /* WikiViewController.swift */,
 				026A297B1F1D4A2000933AC0 /* WikiViewController.xib */,
+				028C93031F2DF9980092264C /* EpisodeViewController.swift */,
+				028C93041F2DF9980092264C /* EpisodeViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				028C92B91F2DF2550092264C /* e304.jpg in Resources */,
 				028C92F81F2DF57B0092264C /* e601.jpg in Resources */,
 				027151651F2A78A700540106 /* Arryn.png in Resources */,
+				028C93061F2DF9980092264C /* EpisodeViewController.xib in Resources */,
 				028A06311F1CAE790027B8CB /* greyjoySigil.png in Resources */,
 				028C92F31F2DF57B0092264C /* e606.jpg in Resources */,
 				028C92BA1F2DF2550092264C /* e303.jpg in Resources */,
@@ -666,6 +673,7 @@
 				02BEDEA71F0EC29B00179504 /* House.swift in Sources */,
 				02BEDE851F0C47E000179504 /* AppDelegate.swift in Sources */,
 				027151731F2B57D200540106 /* Episode.swift in Sources */,
+				028C93051F2DF9980092264C /* EpisodeViewController.swift in Sources */,
 				02FA5B751F14128F008CD3A7 /* HouseViewController.swift in Sources */,
 				02FA5B791F155DA5008CD3A7 /* UIKitExtensions.swift in Sources */,
 				02FA5B7D1F156223008CD3A7 /* Repository.swift in Sources */,

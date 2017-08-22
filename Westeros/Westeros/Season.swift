@@ -25,6 +25,11 @@ final class Season {
         self.releaseDate = releaseDate
         _episodes = Episodes()
     }
+    
+    func sortedEpisodes() -> [Episode] {
+        let episodesArray: [Episode] = Array(_episodes)
+        return episodesArray.sorted()
+    }
 }
 
 extension Season: CustomStringConvertible {

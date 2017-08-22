@@ -11,9 +11,14 @@ import XCTest
 
 class SeasonTests: XCTestCase {
     
+    var seasons: [Season]!
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        seasons = Repository.local.seasons
+        
     }
     
     override func tearDown() {
@@ -78,4 +83,14 @@ class SeasonTests: XCTestCase {
         let seasons = Repository.local.seasons
         XCTAssertEqual(seasons, seasons.sorted())
     }
+    
+    func testEpisodesOrdered() {
+        let episodes = seasons[0].sortedEpisodes()
+        XCTAssertEqual(episodes, episodes.sorted())
+    }
+    
+    
+    
+    
+    
 }

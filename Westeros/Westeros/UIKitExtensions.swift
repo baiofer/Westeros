@@ -27,3 +27,16 @@ extension String {
         return dateFromString!
     }
 }
+
+extension Date {
+
+    //Convertir un Date en String
+    func stringConvert() -> String {
+        let stringDate = self
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        let stringFromDate = dateFormatter.string(from: stringDate)
+        return stringFromDate
+    }
+}
